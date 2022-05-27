@@ -23,8 +23,10 @@ type httpCfg struct {
 }
 
 type grpcCfg struct {
-	Enabled bool `envconfig:"ENABLED" default:"true" json:"enabled"`
-	Port    int  `envconfig:"PORT" default:"20001" json:"port"`
+	Enabled        bool `envconfig:"ENABLED" default:"true" json:"enabled"`
+	Port           int  `envconfig:"PORT" default:"20001" json:"port"`
+	MaxSendMsgSize int  `envconfig:"MAX_SEND_MSG_SIZE" json:"max_send_msg_size"`
+	MaxRecvMsgSize int  `envconfig:"MAX_RECV_MSG_SIZE" json:"max_recv_msg_size"`
 }
 
 type SvcCfg struct {
