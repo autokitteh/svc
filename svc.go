@@ -314,11 +314,11 @@ func Start(opts ...OptFunc) (<-chan error, error) {
 		),
 	)
 
-	if s := cfg.GRPC.MaxSendMsgSize; s >= 0 {
+	if s := cfg.GRPC.MaxSendMsgSize; s > 0 {
 		grpcOpts.Add(grpc.MaxSendMsgSize(s))
 	}
 
-	if s := cfg.GRPC.MaxRecvMsgSize; s >= 0 {
+	if s := cfg.GRPC.MaxRecvMsgSize; s > 0 {
 		grpcOpts.Add(grpc.MaxRecvMsgSize(s))
 	}
 
