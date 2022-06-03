@@ -225,7 +225,7 @@ func Start(opts ...OptFunc) (<-chan error, error) {
 	l.Debug("log init")
 
 	if v := GetVersion(); v != nil {
-		l.Info("initializing", "version", v)
+		l.Debug("initializing", "version", v)
 	}
 
 	for _, c := range svc.opts.cfgs {
