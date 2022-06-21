@@ -3,7 +3,7 @@ module github.com/autokitteh/svc
 go 1.18
 
 require (
-	github.com/autokitteh/L v0.0.0-20220604052907-47eb089e43af
+	github.com/autokitteh/L v0.0.0-20220621043148-4d56abbbcc92
 	github.com/autokitteh/flexcall v0.0.0-20220522011731-56eaad787001
 	github.com/ghodss/yaml v1.0.0
 	github.com/gorilla/handlers v1.5.1
